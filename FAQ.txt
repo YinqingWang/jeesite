@@ -1,0 +1,9 @@
+
+1.  run in windows/linux, differences is as following:
+    1) src/main/resources/log4j.properties:
+       #log4j.appender.RollingFile.File=../logs/jeesite/jeesite.log
+       #log4j.appender.RollingFile.File=/tmp/jeesite/logs/jeesite.log
+       
+     2) src/main/resources/cache/ehcache-rmi.xml, ehcache-local.xml
+        #<!-- <diskStore path="../temp/jeesite/ehcache" />  -->
+	    #<diskStore path="/tmp/jeesite/ehcache" />
